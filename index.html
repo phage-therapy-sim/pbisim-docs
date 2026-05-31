@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pbisim — Tutorial Series</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+           max-width: 800px; margin: 40px auto; padding: 0 20px; color: #24292f; }
+    h1   { border-bottom: 1px solid #d0d7de; padding-bottom: 12px; }
+    h2   { margin-top: 28px; font-size: 1.1em; color: #57606a; font-weight: 600; }
+    ol   { padding-left: 1.4em; }
+    li   { margin: 8px 0; }
+    a    { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .desc { color: #57606a; font-size: 0.9em; margin-left: 4px; }
+    .badge { display: inline-block; background: #ddf4ff; color: #0550ae;
+             font-size: 0.75em; padding: 1px 6px; border-radius: 12px;
+             margin-left: 6px; vertical-align: middle; }
+    footer { margin-top: 48px; border-top: 1px solid #d0d7de; padding-top: 12px;
+             font-size: 0.85em; color: #57606a; }
+  </style>
+</head>
+<body>
+
+<h1>pbisim — Phage-Bacteria Interaction Simulation</h1>
+<p>Tutorial series for the <strong>pbisim</strong> Python package — PKPD modelling of phage therapy.</p>
+<p>
+  <a href="https://github.com/phage-therapy-sim/pbisim">GitHub repository</a> ·
+  <a href="https://github.com/phage-therapy-sim/pbisim/tree/main/tutorials">Download notebooks (.ipynb)</a>
+</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li><a href="tutorial_01_first_simulation.html">Tutorial 01 — First Simulation</a>
+      <span class="desc">— build, run and interpret a minimal phage-bacteria ODE model</span></li>
+  <li><a href="tutorial_02_growth_and_nutrients.html">Tutorial 02 — Growth and Nutrients</a>
+      <span class="desc">— Monod kinetics, nutrient depletion, carrying capacity</span></li>
+  <li><a href="tutorial_03_dormancy.html">Tutorial 03 — Dormancy</a>
+      <span class="desc">— persistent bacteria, depth layers, nutrient-driven resuscitation</span></li>
+  <li><a href="tutorial_04_immune_response.html">Tutorial 04 — Immune Response</a>
+      <span class="desc">— innate immune module, Hill killing, adaptive antibody response</span></li>
+</ol>
+
+<h2>Pharmacokinetics and pharmacodynamics</h2>
+<ol start="5">
+  <li><a href="tutorial_05_phage_pk.html">Tutorial 05 — Phage Pharmacokinetics</a>
+      <span class="desc">— IV dosing, effect-compartment vs mass-conserving mode, k_back spill-back</span></li>
+  <li><a href="tutorial_06_antibiotic_pkpd.html">Tutorial 06 — Antibiotic PK/PD</a>
+      <span class="desc">— two-compartment PK, Hill-equation kill rates, combination therapy</span></li>
+  <li><a href="tutorial_07_dosing_schedules.html">Tutorial 07 — Dosing Schedules</a>
+      <span class="desc">— DoseEvent targets, bolus vs infusion, multi-dose regimens</span></li>
+</ol>
+
+<h2>Multi-strain dynamics and resistance</h2>
+<ol start="8">
+  <li><a href="tutorial_08_multistrainstrains.html">Tutorial 08 — Multi-Strain Dynamics</a>
+      <span class="desc">— StrainSet API, named clinical strains, per-strain antibiotic profiles</span></li>
+  <li><a href="tutorial_09_binary_resistance_genotypes.html">Tutorial 09 — Binary Resistance Genotypes</a>
+      <span class="desc">— BRG: automatic 2^m genotype enumeration, equilibrium ICs, steering</span></li>
+  <li><a href="tutorial_10_cross_resistance.html">Tutorial 10 — Cross-Resistance and Collateral Sensitivity</a>
+      <span class="desc">— Type A (phenotypic) and Type B (genotypic) cross-resistance</span></li>
+</ol>
+
+<h2>Clinical trial simulation</h2>
+<ol start="11">
+  <li><a href="tutorial_11_iiv_virtual_populations.html">Tutorial 11 — IIV and Virtual Populations</a>
+      <span class="desc">— LogNormal variability, VirtualPopulation, TrialRunner</span></li>
+  <li><a href="tutorial_12_clinical_trials.html">Tutorial 12 — Clinical Trials</a>
+      <span class="desc">— ClinicalTrial matched-twins design, treatment arms, result.compare()</span></li>
+</ol>
+
+<h2>Advanced features</h2>
+<ol start="13">
+  <li><a href="tutorial_13_advanced_features.html">Tutorial 13 — Advanced Features</a>
+      <span class="desc">— superinfection, presets, show_equations, get_parameters, feature flags</span></li>
+</ol>
+
+<footer>
+  pbisim v1.0.0 · <a href="https://github.com/phage-therapy-sim/pbisim">phage-therapy-sim/pbisim</a>
+</footer>
+
+</body>
+</html>
